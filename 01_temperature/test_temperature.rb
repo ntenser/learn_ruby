@@ -14,29 +14,29 @@ class TestTemperature < MiniTest::Test
     assert_equal 0, ftoc(32)
   end
 
-  def test_ftoc_converts_boiling_temperature
+  def test_f_to_c_converts_boiling_temperature
     assert_equal 100, ftoc(212)
   end
 
-  def test_ftoc_converts_body_temperature
+  def test_f_to_c_converts_body_temperature
     assert_equal 37, ftoc(98.6)
   end
 
-  def test_ftoc_convers_arbitrary_temperature
+  def test_f_to_c_converts_rbitrary_temperature
     assert_equal 20, ftoc(68)
   end
 
   # Now this set of tests describes a different method,
   # not ftoc() anymore, but ctof().
-  def test_ctof_converts_freezing_temperature
+  def test_c_to_f_converts_freezing_temperature
     assert_equal 32, ctof(0)
   end
 
-  def test_ctof_converts_boiling_temperature
+  def test_c_to_f_converts_boiling_temperature
     assert_equal 212, ctof(100)
   end
 
-  def test_ctof_converts_arbitrary_temperature
+  def test_c_to_f_converts_arbitrary_temperature
     assert_equal 68, ctof(20)
   end
 

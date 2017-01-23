@@ -36,6 +36,8 @@ class TestSimonSays < MiniTest::Test
   #
   # The important part is num = 2. What happens is if a num isn't given,
   # then num will fallback on 2, i.e. it has a default value of 2.
+
+
   def test_repeat_multiple_times
     assert_equal "hello hello hello", repeat("hello", 3)
   end
@@ -44,7 +46,7 @@ class TestSimonSays < MiniTest::Test
   def test_start_of_word_returns_first_letter
     assert_equal "h", start_of_word("hello", 1)
   end
-
+#
   def test_start_of_word_returns_first_two_letters
     assert_equal "Bo", start_of_word("Bob", 2)
   end
